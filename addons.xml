@@ -227,18 +227,20 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.SportsDevil" name="SportsDevil" version="1.8.8.0" provider-name="MaxMustermann">
+<addon id="plugin.video.SportsDevil" version="1.8.8.0" name="SportsDevil" provider-name="MaxMustermann">
 	<requires>
 		<import addon="xbmc.python" version="2.14.0"/>
 		<import addon="script.module.requests" />
 	</requires>
-	<extension point="xbmc.python.pluginsource" library="default.py">
-		<provides>video</provides>
+	<extension 
+		point="xbmc.python.pluginsource"
+		library="default.py">
+	<provides>video</provides>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
 		<summary>Play videos of different sports streaming sites</summary>
 		<description>Play videos of different sports streaming sites</description>
+		<platform>all</platform>
 	</extension>
 </addon>
 
@@ -289,11 +291,29 @@
 	</extension>
 </addon>
 
+<addon id="repository.lambda" name="lambda Add-on repository" version="1.1.0" provider-name="lambda">
+	<extension point="xbmc.addon.repository" name="lambda Add-on repository">
+		<dir>
+			<info compressed="false">http://raw.github.com/lambda81/lambda-repo/master/addons.xml</info>
+			<checksum>http://raw.github.com/lambda81/lambda-repo/master/addons.xml.md5</checksum>
+			<datadir zip="true">http://raw.github.com/lambda81/lambda-repo/master/</datadir>
+		</dir>
+		<info compressed="false">https://offshoregit.com/lambda81/lambda-repo/addons.xml</info>
+		<checksum>https://offshoregit.com/lambda81/lambda-repo/addons.xml.md5</checksum>
+		<datadir zip="true">https://offshoregit.com/lambda81/lambda-repo/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Install Add-ons from lambda</summary>
+		<description lang="en">Download and install add-ons from lambda repository.</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
 <addon id="repository.saikorepo" name="saikohayn repo" version="1.0" provider-name="saikohayn">
 	<extension point="xbmc.addon.repository" name="Saikohayn Addon Repository">
-		<info compressed="false">http://saikorepo.16mb.com/zips/addons.xml</info>
-		<checksum>http://saikorepo.16mb.com/zips/addons.xml.md5</checksum>
-		<datadir zip="true">http://saikorepo.16mb.com/zips/</datadir>
+		<info compressed="false">https://raw.githubusercontent.com/saikohayn/repo/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/saikohayn/repo/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/saikohayn/repo/master/</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Must have addons.</summary>
