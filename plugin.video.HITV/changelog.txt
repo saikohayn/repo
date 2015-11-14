@@ -1,0 +1,2 @@
+1.0.0 - initial release
+-code for Hawaii News Now, and BYUTV credited to "NitroCSIA"

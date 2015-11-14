@@ -1,0 +1,12 @@
+<addon id="repository.saikorepo" name="saikohayn repo" version="1.0" provider-name="saikohayn">
+	<extension point="xbmc.addon.repository" name="Saikohayn Addon Repository">
+		<info compressed="false">http://saikorepo.16mb.com/zips/addons.xml</info>
+		<checksum>http://saikorepo.16mb.com/zips/addons.xml.md5</checksum>
+		<datadir zip="true">http://saikorepo.16mb.com/zips/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Must have addons.</summary>
+		<description>Download and install saikohayn's favorite addons!</description>
+		<platform>all</platform>
+	</extension>
+</addon>

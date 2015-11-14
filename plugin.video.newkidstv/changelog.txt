@@ -1,0 +1,9 @@
+
+V1.2
+Added Thomas and Friends
+Added Fireman Sam
+Added Barney & Friends
+Added Bob The Builder
+
+Version 1.0
+Inital build

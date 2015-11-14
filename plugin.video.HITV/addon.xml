@@ -1,0 +1,14 @@
+<addon id="plugin.video.HITV" name="Hawaii TV" version="1.0" provider-name="saikohayn">
+    <requires>
+		<import addon="xbmc.python" version="2.14.0"/>
+        <import addon="script.module.beautifulsoup" version="3.0.8"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary>Live local Hawaii TV</summary>
+		<description>Live stream of news and sports of local Hawaii tv.</description>
+	</extension>
+</addon>
