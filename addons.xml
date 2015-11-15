@@ -47,7 +47,7 @@
 
 <addon id="plugin.video.ccloudtv"
        name="cCloud TV"
-       version="1.3.5"
+       version="1.3.6"
        provider-name="podgod">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -110,19 +110,19 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>
-		<summary>Live local Hawaii TV</summary>
-		<description>Live stream of news and sports of local Hawaii tv.</description>
+		<summary>Hawaii TV</summary>
+		<description>Live streams of local news and sports of Hawaii.</description>
 	</extension>
 </addon>
 
 <addon id="plugin.video.ldsvideos" name="LDS Videos" version="1.0.1" provider-name="NitroCSIA@gmail.com">
     <requires>
-        <import addon="xbmc.python" version="2.14.0"/>
+        <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.beautifulsoup" version="3.0.8"/>
         <import addon="script.common.plugin.cache" version="0.9.1"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="addon.py">
-		<provides>video</provides>
+        <provides>audio video</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
         <website>http://www.lds.org/</website>
@@ -130,10 +130,11 @@
         <website>http://www.mormonchannel.org/</website>
         <source>https://github.com/NitroCSIA/plugin.video.ldsvideos</source>
         <email>NitroCSIA@gmail.com</email>
+        <language>english</language>
         <platform>all</platform>
-        <summary>Videos from lds.org, byutv.org, and mormonchannel.org</summary>
-        <description>Play LDS videos from the lds.org.  Play BYU-TV shows on demand and stream BYU-TV live.  Play Mormon Channel video and audio content.</description>
-        <disclaimer>Must have YouTube to play copyrighted content from Mormon Channel and BYU TV</disclaimer>
+        <summary lang="en">Videos from lds.org, byutv.org, and mormonchannel.org</summary>
+        <description lang="en">Play LDS videos from the lds.org.  Play BYU-TV shows on demand and stream BYU-TV live.  Play Mormon Channel video and audio content.</description>
+        <disclaimer lang="en">Must have YouTube to play copyrighted content from Mormon Channel and BYU TV</disclaimer>
     </extension>
 </addon>
 
@@ -178,37 +179,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.ProjectCypher"
-       name="ProjectCypherTV"
-       version="1.0.2"
-       provider-name="Cypher">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.t0mm0.common" version="2.0.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" version="3.0.0"/>
-    <import addon="script.module.urlresolver" optional="true"/>
-    <import addon="script.module.simplejson" /> 
-    <import addon="script.common.plugin.cache" version="2.5.2"/>
-    <import addon="script.module.metahandler" version="2.5.1"/>	
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary>Live SD and HD TV channels</summary>
-    <description>General disclaimer: Project Cypher takes no responsibility for the content or reliability of the feeds. Project Cypher [B]Does Not[/B] host any of the feeds or Streams. [B]PLEXUS[/B] addon is required for P2P (Torrent) sports channels. Make sure it is properly configured for your system. Most of the Code from this addon was taken from many other addons but used under the GNU GENERAL PUBLIC LICENSE Version 2, June 1991</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="plugin.video.salts" version="1.0.74" name="Stream All The Sources" provider-name="tknorris">
+<addon id="plugin.video.salts" version="1.0.76" name="Stream All The Sources" provider-name="tknorris">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.urlresolver" version="2.2.0"/>
@@ -227,24 +198,28 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.SportsDevil" version="1.8.8.0" name="SportsDevil" provider-name="MaxMustermann">
-	<requires>
-		<import addon="xbmc.python" version="2.14.0"/>
-		<import addon="script.module.requests" />
-	</requires>
-	<extension 
-		point="xbmc.python.pluginsource"
-		library="default.py">
-	<provides>video</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Play videos of different sports streaming sites</summary>
-		<description>Play videos of different sports streaming sites</description>
-		<platform>all</platform>
-	</extension>
+<addon
+  id="plugin.video.SportsDevil"
+  version="1.8.8.0"
+  name="SportsDevil"
+  provider-name="MaxMustermann">
+  <requires>
+   <import addon="xbmc.python" version="2.14.0"/>
+   <import addon="script.module.requests" />
+  </requires>
+  <extension 
+    point="xbmc.python.pluginsource"
+    library="default.py">
+   <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Play videos of different sports streaming sites</summary>
+    <description>Play videos of different sports streaming sites</description>
+    <platform>all</platform>
+  </extension>
 </addon>
 
-<addon id="plugin.video.ustvnow" version="12.0.10" name="USTVnow" provider-name="Lunatixz">
+<addon id="plugin.video.ustvnow" version="12.0.10a" name="USTVnow" provider-name="Lunatixz">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.simplejson" version="3.3.0"/>
@@ -267,30 +242,6 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.yifymovies.hd" name="Yify Movies HD" version="1.8.0" provider-name="lambda">
-	<requires>
-		<import addon="xbmc.python" version="2.1.0"/>
-		<import addon="script.module.metahandler" version="1.0.0"/>
-		<import addon="script.module.urlresolver" version="1.0.0"/>
-		<import addon="script.module.simplejson" version="2.0.10"/>
-		<import addon="script.common.plugin.cache" version="0.9.1"/>
-		<import addon="script.module.parsedom" version="0.9.1"/>
-		<import addon="plugin.video.youtube" version="2.9.2"/>
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="default.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Watch a wide selection of movies from yify.tv</summary>
-		<description lang="en">Visit TVADDONS.ag for support</description>
-		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
-		<forum>http://forums.tvaddons.ag/forums/148-lambda-s-xbmc-addons</forum>
-		<source>https://offshoregit.com/lambda81/lambda-addons</source>
-		<website>https://offshoregit.com/lambda81/</website>
-		<platform>all</platform>
-	</extension>
-</addon>
-
 <addon id="repository.lambda" name="lambda Add-on repository" version="1.1.0" provider-name="lambda">
 	<extension point="xbmc.addon.repository" name="lambda Add-on repository">
 		<dir>
@@ -309,15 +260,15 @@
 	</extension>
 </addon>
 
-<addon id="repository.saikorepo" name="saikohayn repo" version="1.0" provider-name="saikohayn">
-	<extension point="xbmc.addon.repository" name="Saikohayn Addon Repository">
-		<info compressed="false">https://raw.githubusercontent.com/saikohayn/repo/master/addons.xml</info>
-		<checksum>https://raw.githubusercontent.com/saikohayn/repo/master/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.githubusercontent.com/saikohayn/repo/master/</datadir>
+<addon id="repository.saikorepo" name="saikohayn Add-on repository" version="1.0" provider-name="saikohayn">
+	<extension point="xbmc.addon.repository" name="saikohayn Add-on repository">
+		<info compressed="false">http://saikorepo.16mb.com/zips/addons.xml</info>
+		<checksum>http://saikorepo.16mb.com/zips/addons.xml.md5</checksum>
+		<datadir zip="true">http://saikorepo.16mb.com/zips/</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary>Must have addons.</summary>
-		<description>Download and install saikohayn's favorite addons!</description>
+		<summary lang="en">Saikohayn's favorite add-ons for Kodi.</summary>
+		<description lang="en">Install and enjoy, thanks to the developers of these awesome add-ons.</description>
 		<platform>all</platform>
 	</extension>
 </addon>

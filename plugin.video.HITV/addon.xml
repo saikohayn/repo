@@ -8,7 +8,7 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>
-		<summary>Live local Hawaii TV</summary>
-		<description>Live stream of news and sports of local Hawaii tv.</description>
+		<summary>Hawaii TV</summary>
+		<description>Live streams of local news and sports of Hawaii.</description>
 	</extension>
 </addon>
