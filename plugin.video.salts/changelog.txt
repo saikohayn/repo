@@ -1,3 +1,56 @@
+[B]Version 1.0.84[/B]
+- Add hidden option to disable custom dialogs completely
+- Fix cast info label
+- Restore tv-release.net scraper
+- Fix Unicode error in sub updates
+- Fix ororo.tv
+- Fix ViewMovies
+- Improve CyberReel
+- Fix 123Movies
+- Fix wso.ch scrpaer
+- Fix MoviesOnline7 scraper
+
+[B]Version 1.0.83[/B]
+- Colorize FL Values (Green-Yellow-Orange-Red)
+- Add auto-play menu item
+- Add option to automatically pick 1st subtitle
+- Force "drop sources with unknown sort values" to be off during auto-conf
+- Fix kodi freeze when playing from Infodialog
+- Fix update sub failing on unicode movie titles
+- Improve Auto-config process/dialog
+- Add StreamLord Scraper
+- Make dd.tv respect max quality settings
+- Add CyberReel scraper
+- Update Translations
+
+[B]Version 1.0.82[/B]
+- Fix CouchTunerV1 scraper
+- Fix filmstreaming.in scraper
+- Update MoviesOnline7 scraper
+- Fix occasional kodi freeze using Select Source
+
+[B]Version 1.0.81[/B]
+- Fix LosMovies scraper
+- Fix Flixanity scraper
+- Fix uflix scraper
+- Fix pubfilm scraper
+- Fix viooz scraper
+- Remove scrapers for sites that have gone offline
+
+[B]Version 1.0.80[/B]
+- Fix 123movies search
+- Fix playback failed message (maybe)
+- Fix watchseries scraper
+- Add discrete max quality filter
+
+[B]Version 1.0.79[/B]
+- Improve dizigold scraper
+- Add xmovies8.v2 scraper
+- Fix unicode error that sometimes occured during sub update
+- Translation updates
+- Fix flixanity scraper
+- Fix ororo.tv login 
+
 [B]Version 1.0.78[/B]
 - Add dizipas scraper
 - Add moviehut scraper

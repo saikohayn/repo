@@ -21,7 +21,6 @@
     <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
   </extension>
 </addon>
-
 <addon id="plugin.video.animetoon"
        name="AnimeToon"
        version="1.4.6"
@@ -44,10 +43,9 @@
     <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
   </extension>
 </addon>
-
 <addon id="plugin.video.ccloudtv"
        name="cCloud TV"
-       version="1.3.7"
+       version="1.3.8"
        provider-name="podgod">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -77,29 +75,6 @@
     <platform>all</platform>
   </extension>
 </addon>
-
-<addon id="plugin.video.genesis" name="Genesis" version="5.1.4" provider-name="lambda">
-	<requires>
-		<import addon="xbmc.python" version="2.1.0" />
-		<import addon="script.module.requests" version="1.0.0" />
-		<import addon="script.module.metahandler" optional="true" />
-		<import addon="plugin.video.youtube" optional="true" />
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="default.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.service" library="service.py" start="startup" />
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">The origins of streaming</summary>
-		<description lang="en">Visit TVADDONS.ag for support</description>
-		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
-		<forum>http://forums.tvaddons.ag/forums/148-lambda-s-xbmc-addons</forum>
-		<source>https://offshoregit.com/lambda81/</source>
-		<website>https://offshoregit.com/lambda81/</website>
-		<platform>all</platform>
-	</extension>
-</addon>
-
 <addon id="plugin.video.HITV" name="Hawaii TV" version="1.0" provider-name="saikohayn">
     <requires>
 		<import addon="xbmc.python" version="2.14.0"/>
@@ -114,7 +89,6 @@
 		<description>Live streams of local news and sports of Hawaii.</description>
 	</extension>
 </addon>
-
 <addon id="plugin.video.ldsvideos" name="LDS Videos" version="1.0.1" provider-name="NitroCSIA@gmail.com">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
@@ -137,29 +111,7 @@
         <disclaimer lang="en">Must have YouTube to play copyrighted content from Mormon Channel and BYU TV</disclaimer>
     </extension>
 </addon>
-
-<addon id="plugin.video.newkidstv"
-	name="New Kids Tv"
-	version="1.2.1"
-	provider-name="@random_robbie">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.addon.common" version="2.0.0"/>
-    <import addon="plugin.video.youtube" version="5.0.0"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Baby and Kids TV Shows</summary>
-    <description lang="en">Plenty Of Kids TV Shows they will all love!</description>
-    <platform>all</platform>
-    <forum>n/a</forum>
-    <website>n/a</website>
-  </extension>
-</addon>
-
-<addon id="plugin.video.phstreams" name="Phoenix" version="2.6.8" provider-name="Blazetamer, lambda">
+<addon id="plugin.video.phstreams" name="Phoenix" version="2.7.0" provider-name="Blazetamer, lambda">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="script.module.pyxbmct" version="1.1.4" />
@@ -178,8 +130,7 @@
 		<website>http://www.tvaddons.ag/</website>
 	</extension>
 </addon>
-
-<addon id="plugin.video.salts" version="1.0.78" name="Stream All The Sources" provider-name="tknorris">
+<addon id="plugin.video.salts" version="1.0.84" name="Stream All The Sources" provider-name="tknorris">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.urlresolver" version="2.2.0"/>
@@ -197,30 +148,26 @@
 		<forum>http://forums.tvaddons.ag/forums/180-TKNORRIS-RELEASE-REPOSITORY</forum>
 	</extension>
 </addon>
-
-<addon id="plugin.video.ustvnow" version="12.0.12" name="USTVnow" provider-name="Lunatixz">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-        <import addon="script.module.simplejson" version="3.3.0"/>
-        <import addon="script.common.plugin.cache" version="2.5.5"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.service" library="service.py" start="startup"/>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">theOfficial USTVnow Plugin lets you watch all your favorite US television channels from anywhere around the world. Visit www.ustvnow.com for more Information</summary>
-        <description lang="en">Initially when you sign up you will be registering for our free plan that lets you share our antenna to receive all major terrestrial stations that as an American citizen or resident you would normally be able to receive for free (ABC, CBS, CW, FOX, NBC, PBS). 
-        After this you have the option to upgrade to any of our paid plans. You can cancel or switch plans at any time. Monthly plans automatically renew but you can cancel anytime in order not to be billed again when your current 30 day period has expired. Note, you must first sign up for our free plan and then you can upgrade to a paid plan. Channels included in USTVNow paid plans.
-        ABC, CBS, CW, FOX, NBC, PBS, My9, AE, Animal Planet, Bravo, Cartoon Network, CNBC, CNN, Comedy Central, Discovery Channel, ESPN, FX, Fox News, History, Lifetime, National Geographic, Nickelodeon, Spike, Syfy, TBS, TNT, USA, AMC. For more channels including HBO and SHOWTIME, see our Premium Plans with up to 200 channels and HD.</description>
-        <platform>all</platform>
-        <language>en</language>
-        <license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
-        <source>https://github.com/Lunatixz/XBMC_Addons/tree/master/plugin.video.ustvnow</source>
-        <forum>http://forum.kodi.tv/showthread.php?tid=233135</forum>   
-    </extension>
+<addon
+  id="plugin.video.SportsDevil"
+  version="1.8.8.0"
+  name="SportsDevil"
+  provider-name="MaxMustermann">
+  <requires>
+   <import addon="xbmc.python" version="2.14.0"/>
+   <import addon="script.module.requests" />
+  </requires>
+  <extension 
+    point="xbmc.python.pluginsource"
+    library="default.py">
+   <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Play videos of different sports streaming sites</summary>
+    <description>Play videos of different sports streaming sites</description>
+    <platform>all</platform>
+  </extension>
 </addon>
-
 <addon id="repository.lambda" name="lambda Add-on repository" version="1.1.0" provider-name="lambda">
 	<extension point="xbmc.addon.repository" name="lambda Add-on repository">
 		<dir>
@@ -238,7 +185,6 @@
 		<platform>all</platform>
 	</extension>
 </addon>
-
 <addon id="repository.saikorepo" name="saikohayn Add-on repository" version="1.0" provider-name="saikohayn">
 	<extension point="xbmc.addon.repository" name="saikohayn Add-on repository">
 		<info compressed="false">http://saikorepo.16mb.com/zips/addons.xml</info>
@@ -251,7 +197,18 @@
 		<platform>all</platform>
 	</extension>
 </addon>
-
+<addon id="repository.zeus" name="[COLOR black].[/COLOR][COLOR yellow]ZEUS [/COLOR][COLOR white]Repository[/COLOR]" version="1.1.0" provider-name="ZEUS">
+	<extension point="xbmc.addon.repository" name="[COLOR black].[/COLOR][COLOR yellow]ZEUS [/COLOR][COLOR white]Repository[/COLOR]">
+        <info compressed="false">http://repo.zeusrepo.com/addons.xml</info>
+		<checksum>http://repo.zeusrepo.com/addons.xml.md5</checksum>
+		<datadir zip="true">http://repo.zeusrepo.com/zips</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>ZEUS KODI XBMC ADDON From Hakamac</summary>
+		<description>For Support and news go to http://zeus.video</description>
+		<platform>all</platform>
+	</extension>
+</addon>
 <addon id="script.audio.pandora"
        name="Pandora"
        version="2.3.2"
@@ -285,7 +242,6 @@
     </extension>
   -->
 </addon>
-
 <addon id="script.tvguidetecbox" name="iVue TV Guide" version="6.0.24" provider-name="TECBOX DreamHD">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
