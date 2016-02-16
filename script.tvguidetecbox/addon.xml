@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.tvguidetecbox" name="iVue TV Guide" version="6.0.24" provider-name="TECBOX DreamHD">
-	<requires>
-		<import addon="xbmc.python" version="2.1.0"/>
-		<import addon="script.module.simplejson" version="2.0.10"/>
-	</requires>
-	<extension point="xbmc.python.script" library="addon.py"/>
-    <extension point="xbmc.service" library="service.py" start="login"/>
-	<extension point="xbmc.addon.metadata">
-		<description lang="en">iVue Guide allows you to combine some of your favourite live TV plugins for use with a fully working EPG</description>
-		<disclaimer lang="en">iVue Guide is based on FTV Guide by rayw1986 and Bluezed, which in turn is based on the original TV Guide addon by twinther.</disclaimer>
-		<language></language>
-		<platform>all</platform>
-		<license>GPLv2</license>
-		<forum></forum>
-		<website></website>
-		<email></email>
-		<source></source>
-	</extension>
+<addon id="script-tvguidetecbox"
+       name="iVue"
+       version="6.0.25"
+       provider-name="Addon CEASED">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+       <extension point="xbmc.python.pluginsource"
+       library="default.py">
+    <provides>video</provides>
+  </extension>
+       <extension point="xbmc.addon.metadata">
+    <summary lang="en">iVue</summary>
+    <language>en</language>
+    <description lang="en">This addon will no longer be supported.</description>
+     <platform>all</platform>
+  </extension>
 </addon>
